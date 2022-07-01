@@ -35,18 +35,22 @@
                     <div class="col-6 col-sm-6">test test
                         <div id="container">
                             <div id="coffees">
+<!--                                js -->
                             </div>
                         </div>
                         </div>
                         <div class="form-col-6 col-sm-6">
                             <form>
-                                <label for="roast-selection"></label>
-                                <select id="roast-selection">
+                                <label for="roast-selection">Roast</label>
+                                <select class="form-select" id="roast-selection">
+                                    <option selected>Open this select menu</option>
                                     <option>light</option>
                                     <option>medium</option>
                                     <option>dark</option>
                                 </select>
-                                <input id="submit" type="submit" />
+                                <label for="roast-selection">Coffee Name</label>
+                                <input for="roast-selection" type="text" class="form-control" id="exampleDataList" placeholder="Know the name of the coffee?">
+                                <input class="btn btn-primary" type="submit" value="Submit" style="width: 100%">
                             </form>
                         </div>
                     </div>

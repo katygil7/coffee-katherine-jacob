@@ -17,6 +17,9 @@ function renderCoffees(coffees) {
     }
     return html;
 }
+//for each for the search bar
+
+
 
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
