@@ -32,26 +32,44 @@
             <hr>
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-sm-6">test test
+                    <div class="col-6 col-sm-6">
                         <div id="container">
-                            <div class="listedcoffee" id="coffees">
+                            <div class="listedCoffee" id="coffees">
 <!--                                js -->
                             </div>
                         </div>
                         </div>
-                        <div class="form-col-6 col-sm-6">
+                        <div class="col-6 col-sm-6">
+                            <div class="form row">
+                                <div class="form1 col-12">
                             <form>
                                 <label for="roast-selection">Roast</label>
                                 <select class="form-select" id="roast-selection">
-                                    <option>light</option>
-                                    <option>medium</option>
-                                    <option>dark</option>
+                                    <option value="all">All</option>
+                                    <option value="light">light</option>
+                                    <option value="medium">medium</option>
+                                    <option value="dark">dark</option>
                                 </select>
-                                <label for="roast-selection">Coffee Name</label>
-                                <input for="roast-selection" type="text" class="form-control" id="exampleDataList" placeholder="Know the name of the coffee?">
+                                <label for="name-selection">Coffee Name</label>
+                                <input id="name-selection" type="text" class="form-control" placeholder="Know the name of the coffee?">
                                 <input class="btn btn-primary mt-3" id="submit" type="submit" style="width: 100%" />
                             </form>
                         </div>
+
+                    <div class="form2 col-12">
+                        <form>
+                            <label for="roast-selection">Roast</label>
+                            <select class="form-select" id="add-roast">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <label for="roast-selection">Coffee Name</label>
+                            <input type="text" class="form-control" id="add-name" placeholder="Know the name of the coffee?">
+                            <input class="btn btn-primary mt-3" id="add-submit" type="submit" style="width: 100%" />
+                        </form>
+                    </div>
+                                </div>
                     </div>
                 </div>
             </div>
@@ -62,4 +80,4 @@
                 crossorigin="anonymous"></script>
     </body>
 </html>
-<!-- questions for tomorrow--- how to forms on one half of the page in 6 columns??? -->\\
+<!-- questions for tomorrow--- how to forms on one half of the page in 6 columns??? -->
