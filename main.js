@@ -26,51 +26,70 @@ let filteredCoffee = {name: nameSelection.value, roast: roastSelection.value}
     filteredCoffees.push(filteredCoffee);
 });
 roastSelection.addEventListener("input", () => {
-    updateCoffees();
+    createCoffeeList();
     console.log(roastSelection.value);
 });
 nameSelection.addEventListener("input", ()=> {
-    updateCoffees();
+    createCoffeeList();
     console.log(nameSelection.value);
 });
 
-function renderCoffee(coffee) {
-    let html = '<div class="coffee">';
-    // html += '' + coffee.id + '</td>';
-    html += '<h4>' + coffee.name + '</h4>';
-    html += '<p>' + coffee.roast + '</p>';
-    // /html += '</tr>';
-    html += '</div>';
-    return html;
-}
-
-function renderCoffees(coffees) {
-    let html = '';
-    for(let i = 0; i <= coffees.length - 1; i++) {
-        html += renderCoffee(coffees[i]);
-    }
-    return html;
-}
-//for each for the search bar
-
-
-
-function updateCoffees() {// don't submit the form, we just want to update the data
-    if (roastSelection.value === "all"){
-        return listedCoffees.innerHTML = renderCoffees(coffees)
-    }
-    coffees.forEach(function(coffee) {
-        if (coffee.roast === roastSelection.value && nameSelection.value === "") {
-            filteredCoffees.push(coffee);
-        }
-        if (coffee.name.toLowerCase() === nameSelection.value.toLowerCase()) {
-            filteredCoffees = [];
-            filteredCoffees.push(coffee);
-        }
+// function renderCoffee(coffee) {
+//     let html = '<div class="coffee">';
+//     // html += '' + coffee.id + '</td>';
+//     html += '<h4>' + coffee.name + '</h4>';
+//     html += '<p>' + coffee.roast + '</p>';
+//     // /html += '</tr>';
+//     html += '</div>';
+//     return html;
+// }
+//
+// function renderCoffees(coffees) {
+//     let html = '';
+//     for(let i = 0; i <= coffees.length - 1; i++) {
+//         html += renderCoffee(coffees[i]);
+//     }
+//     return html;
+// }
+// //for each for the search bar
+//
+//
+//
+// function updateCoffees() {// don't submit the form, we just want to update the data
+//     if (roastSelection.value === "all"){
+//         return listedCoffees.innerHTML = renderCoffees(coffees)
+//     }
+//     coffees.forEach(function(coffee) {
+//         if (coffee.roast === roastSelection.value && nameSelection.value === "") {
+//             filteredCoffees.push(coffee);
+//         }
+//         if (coffee.name.toLowerCase() === nameSelection.value.toLowerCase()) {
+//             filteredCoffees = [];
+//             filteredCoffees.push(coffee);
+//         }
+//     });
+//     listedCoffees.innerHTML = renderCoffees(filteredCoffees);
+// }
+function createCoffeeList(){
+    let display = coffees.slice();
+    let roastValue = roastSelection.value;
+    let nameValue = nameSelection.value;
+    if ( roastValue !== "all"){
+        display = display.filter(function (coffee){
+            return coffee.roast ===  roastValue;
+        })}
+    if (nameValue){
+        display = display.filter(function (coffee){
+            return coffee.name.toLowerCase().includes(nameValue.toLowerCase());
+        })}
+    display = display.map(function(coffee){
+        return `<div class = 'coffee'>
+                    <h1>${coffee.name}</h1>
+                    <p>${coffee.roast}</p>
+                </div>`
     });
-    listedCoffees.innerHTML = renderCoffees(filteredCoffees);
+    listedCoffees.innerHTML = display.join("\n");
 }
-
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 
 // listedCoffees.innerHTML = renderCoffees(coffees);
