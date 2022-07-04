@@ -94,3 +94,5 @@ function createCoffeeList(){
 
 // listedCoffees.innerHTML = renderCoffees(coffees);
 
+
+

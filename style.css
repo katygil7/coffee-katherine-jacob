@@ -10,6 +10,14 @@ div.tall-row {
     height: 300px;
 }
 
+body{
+    background-image: url("img/nick-martin-jET6aJGkp9k-unsplash.jpg");
+    /*background-image: linear-gradient(lightgreen, green, darkolivegreen);*/
+}
+/*nav needs to match background in order to blend*/
+.navbar{
+    background-image: url("img/nick-martin-jET6aJGkp9k-unsplash.jpg");
+}
 
 
 table {
@@ -27,8 +35,12 @@ h1 {
 .form1{
     /*display: flex;*/
     /*justify-content: flex-end;*/
-    background-color: cornsilk;
-    margin-bottom: 10px;
+    background-color: #D8B53A;
+    /*margin-bottom: 20vh;*/
 }
+
+
+
+
 
 
