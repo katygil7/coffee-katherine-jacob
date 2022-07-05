@@ -26,8 +26,8 @@ body{
     text-align: center;
     font-family: 'Jost', sans-serif;
     font-weight: bold;
-    font-style: italic;
-    text-shadow: black 2px 2px;
+    /*font-style: italic;*/
+    text-shadow: lightgray 2px 2px;
     color: darkolivegreen;
 }
 .form1{
@@ -68,5 +68,7 @@ hr{
 }
 
 
-
+#roast-selection{
+    color: darkolivegreen;
+}
 

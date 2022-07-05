@@ -33,7 +33,21 @@ nameSelection.addEventListener("input", ()=> {
     createCoffeeList();
     console.log(nameSelection.value);
 });
-
+// const addRoast = document.getElementById("add-roast");
+// const addName = document.getElementById("add-name");
+const addSubmit = document.getElementById("add-submit");
+addSubmit.addEventListener("click", (ev)=> {
+    ev.preventDefault();
+    console.log(coffees);
+// let na =addName.value
+// let ro =addRoast.value
+    let coffee = {
+        id: Date.now(),
+        name: document.getElementById("add-name").value,
+        roast: document.getElementById("add-roast").value
+    }
+    coffees.push(coffee);
+});
 // function renderCoffee(coffee) {
 //     let html = '<div class="coffee">';
 //     // html += '' + coffee.id + '</td>';
