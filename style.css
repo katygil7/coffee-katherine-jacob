@@ -1,22 +1,27 @@
-/* row color */
-div.row {
-    border: 1px dashed blue;
-}
-/* cell color */
-div.row > div {
-    border: 1px solid red;
-}
-div.tall-row {
-    height: 300px;
-}
+/*!* row color *!*/
+/*div.row {*/
+/*    border: 1px dashed blue;*/
+/*}*/
+/*!* cell color *!*/
+/*div.row > div {*/
+/*    border: 1px solid red;*/
+/*}*/
+/*div.tall-row {*/
+/*    height: 300px;*/
+/*}*/
 
 body{
-    background-image: url("img/nick-martin-jET6aJGkp9k-unsplash.jpg");
-    /*background-image: linear-gradient(lightgreen, green, darkolivegreen);*/
+    background-image: url("img/nordwood-themes-ivP3TYdLvw0-unsplash.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-x;
+
+
+    /*background-image: linear-gradient(snow, snow, black);*/
 }
 /*nav needs to match background in order to blend*/
 .navbar{
-    background-image: url("img/nick-martin-jET6aJGkp9k-unsplash.jpg");
+    background-image: linear-gradient(snow, snow, whitesmoke);
 }
 
 
@@ -31,15 +36,22 @@ td, th {
 }
 h1 {
     text-align: center;
+    font-family: 'Jost', sans-serif;
 }
 .form1{
     /*display: flex;*/
     /*justify-content: flex-end;*/
-    background-color: #D8B53A;
+    background-color: whitesmoke;
     /*margin-bottom: 20vh;*/
 }
+.middleRow{
+    font-family: 'Jost', sans-serif;
+    padding: 10px;
+}
 
-
+.container{
+    background-color: rgba(253, 253, 252, 0.78);
+}
 
 
 
