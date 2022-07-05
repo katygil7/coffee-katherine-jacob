@@ -14,9 +14,7 @@ body{
     background-image: url("img/nordwood-themes-ivP3TYdLvw0-unsplash (1).jpg");]
     background-color: darkolivegreen;
 
-
 }
-/*nav needs to match background in order to blend*/
 .navbar{
     background-image: url("img/nordwood-themes-ivP3TYdLvw0-unsplash (1).jpg");
     width: 100%;
@@ -24,54 +22,50 @@ body{
     background-color: rgba(250, 250, 242, 0.23);
 }
 
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
-h1 {
+.header {
     text-align: center;
     font-family: 'Jost', sans-serif;
     font-weight: bold;
     font-style: italic;
     text-shadow: black 2px 2px;
+    color: darkolivegreen;
 }
 .form1{
     font-family: 'Jost', sans-serif;
 
-    /*background-color: whitesmoke;*/
+
 }
-/*.middleRow{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    font-family: 'Jost', sans-serif;*/
-/*    margin-bottom: 30px;*/
-/*    margin-top: 30px;*/
-/*}*/
+
 .middleDiv{
     padding: 50px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
 }
 .container{
-    opacity: .9;
-    font-family: 'Jost', sans-serif;
-    /*color: darkolivegreen;*/
-
-}
-.midText{
-    font-family: 'Jost', sans-serif;
-
-    text-align: center;
+    opacity: .92;
 }
 p{
-    color: black;
+    color: darkolivegreen;
     text-shadow: white 1px 1px;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: medium;
+    letter-spacing: 4px;
 }
+.h1, h1 {
+    text-shadow: white 1px 1px;
+}
+hr{
+    border: 2px dashed #000;
 
+    /*width: 100%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*opcaity: 0.3;*/
+    /*color: darkolivegreen;*/
+}
 
 
 
