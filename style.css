@@ -26,16 +26,18 @@ body{
     text-align: center;
     font-family: 'Jost', sans-serif;
     font-weight: bold;
-    /*font-style: italic;*/
     text-shadow: lightgray 2px 2px;
     color: darkolivegreen;
+    letter-spacing: 2px;
 }
 .form1{
     font-family: 'Jost', sans-serif;
-
-
+    letter-spacing: 2px;
 }
-
+.form2{
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+}
 .middleDiv{
     padding: 50px;
     text-align: center;
@@ -58,7 +60,7 @@ p{
     text-shadow: white 1px 1px;
 }
 hr{
-    border: 2px dashed #000;
+    border: dashed red;
 
     /*width: 100%;*/
     /*margin-left: auto;*/
@@ -69,6 +71,23 @@ hr{
 
 
 #roast-selection{
-    color: darkolivegreen;
+    color: rgba(139, 69, 19, 0.82);
 }
+#add-roast{
+    color: rgba(139, 69, 19, 0.82);
+}
+label{
+    font-family: 'Jost', sans-serif;
+    color: darkolivegreen;
+    text-shadow: white 1px 1px;
+    font-weight: bolder;
+    font-size: medium;
+    letter-spacing: 4px;
+}
+#name-selection::placeholder{
 
+    color: rgba(139, 69, 19, 0.82);
+}
+#add-name::placeholder {
+    color: rgba(139, 69, 19, 0.82);
+}
