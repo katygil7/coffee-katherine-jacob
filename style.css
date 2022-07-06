@@ -13,6 +13,7 @@
 body{
     background-image: url("img/nordwood-themes-ivP3TYdLvw0-unsplash (1).jpg");]
     background-color: darkolivegreen;
+    background-size: cover;
 
 }
 .navbar{
@@ -23,11 +24,9 @@ body{
 }
 .navbarLink-brand{
     color: darkolivegreen;
-    font-size: small;
     font-family: 'Jost', sans-serif;
     text-decoration: underline rgba(187, 149, 115, 0.6);
-
-
+    margin-right: 10px;
 }
 .header {
     padding-top: 10px;
@@ -57,7 +56,7 @@ body{
     letter-spacing: 2px;
     text-shadow: rgba(187, 149, 115, 0.6) 2px 2px;
     color: darkolivegreen;
-    text-decoration: underline overline lightgray;
+    text-decoration: underline lightgray;
 
 }
 .container{
@@ -113,4 +112,9 @@ a { padding-top: 10px;
     color: darkolivegreen;
     letter-spacing: 2px;
     text-decoration: underline lightgray;
+}
+.listedCoffee{
+    background: linear-gradient(90deg, transparent 25%, #f0f2f4, transparent);
+    border-radius: 10px;
+
 }

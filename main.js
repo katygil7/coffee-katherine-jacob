@@ -106,7 +106,7 @@ function createCoffeeList(){
 }
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 
-// listedCoffees.innerHTML = renderCoffees(coffees);
+createCoffeeList();
 
 
 
