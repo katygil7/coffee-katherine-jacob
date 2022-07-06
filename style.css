@@ -105,3 +105,12 @@ label{
 #add-name::placeholder {
     color: rgba(187, 149, 115, 0.6);
 }
+a { padding-top: 10px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    text-shadow: rgba(187, 149, 115, 0.6) 2px 2px;
+    color: darkolivegreen;
+    letter-spacing: 2px;
+    text-decoration: underline lightgray;
+}
