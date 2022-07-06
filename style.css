@@ -28,6 +28,9 @@ body{
     text-decoration: underline rgba(187, 149, 115, 0.6);
     margin-right: 10px;
 }
+.navbarLink-brand:hover{
+    color: darkolivegreen;
+}
 .header {
     padding-top: 10px;
     text-align: center;
@@ -48,7 +51,7 @@ body{
     letter-spacing: 2px;
 }
 .middleDiv{
-    padding: 50px;
+    padding-top: 60px;
     text-align: center;
     font-family: 'Jost', sans-serif;
     font-weight: bold;
@@ -57,7 +60,6 @@ body{
     text-shadow: rgba(187, 149, 115, 0.6) 2px 2px;
     color: darkolivegreen;
     text-decoration: underline lightgray;
-
 }
 .container{
     opacity: .92;
@@ -98,7 +100,6 @@ label{
     padding-top: 5px;
 }
 #name-selection::placeholder{
-
     color: rgba(187, 149, 115, 0.6);
 }
 #add-name::placeholder {
@@ -114,10 +115,12 @@ a { padding-top: 10px;
     text-decoration: underline lightgray;
 }
 .listedCoffee{
-    background: linear-gradient(90deg, transparent 25%, #f0f2f4, transparent);
+    background: linear-gradient(90deg, transparent 25%, rgba(240, 242, 244, 0.31), transparent);
     border-radius: 10px;
-
 }
+
+/*jacob's code for pricing coffee*/
+
 * {
     box-sizing: border-box;
 }
