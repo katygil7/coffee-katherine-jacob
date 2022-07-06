@@ -16,7 +16,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">K&J Coffee</a>
+                    <a class="navbarLink-brand" href="#">K&J Coffee</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -25,7 +25,6 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                             <a class="nav-link" href="#">Features</a>
                             <a class="nav-link" href="#">Pricing</a>
-                            <a class="nav-link disabled">Disabled</a>
                         </div>
                     </div>
                 </div>
@@ -33,7 +32,8 @@
             <div>
                 <h1 class="header">Coffee</h1>
             </div>
-            <hr>
+            <hr class="hr1">
+            <hr class="hr2">
             <div class="main container">
                 <div class="main row">
                     <div class="col-6 col-sm-6">
@@ -72,7 +72,7 @@
                                 <option>dark</option>
                             </select>
                             <label for="roast-selection">Coffee Name</label>
-                            <input required type="text" class="form-control" id="add-name" style="color: darkolivegreen" placeholder="Create your coffee blend">
+                            <input type="text" class="form-control" id="add-name" style="color: darkolivegreen" placeholder="Create your coffee blend" required>
                             <input class="btn btn-outline-success mt-3" id="add-submit" type="submit" style="width: 100%" />
                         </form>
                     </div>
